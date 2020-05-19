@@ -20,8 +20,8 @@ let id = 0;
         stop: true
       },
         function (msg) {
-          var blob = new Blob([msg], {type: "text/plain;charset=utf-8"});
-          FileSaver.saveAs(blob, `log.txt`);
+          var blob = new Blob([msg], {type: "application/json;charset=utf-8"});
+          FileSaver.saveAs(blob, `log.json`);
         });
     });
   });
